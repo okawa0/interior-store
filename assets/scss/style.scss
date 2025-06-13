@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.interior-store-index-body{
+  max-width: 1360px;
+  padding: 0 40px;
+  .interior-store-index-header{
+    margin: 1.5rem 0;
+    .interior-store-index-header-title{}
+  }
+}
