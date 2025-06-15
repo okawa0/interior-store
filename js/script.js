@@ -1,0 +1,1 @@
+const hamburger = document.getElementById('interior-store-index-header-nav');
