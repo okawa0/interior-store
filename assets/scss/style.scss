@@ -43,20 +43,20 @@
         border-radius: 2px;
         transition: all 0.3s ease;
         &:nth-child(1){
-          top: 4px;
+          top: 6px;
         }
         &:nth-child(2){
-          top: 12px;
+          top: 14px;
         }
       }
-      &active{
+      &.active{
         .interior-store-index-header-nav-line{
           &:nth-child(1){
-            top: 50%;
+            top: 70%;
             transform: translateY(-50%) rotate(45deg);
           }
           &:nth-child(2){
-            bottom: 50%;
+            bottom: 40%;
             transform: translateY(-50%) rotate(-45deg) ;
           }
         }
