@@ -28,3 +28,9 @@ function closeMenu() {
   document.body.style.overflow = '';
   isMenuOpen = false;
 }
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && isMenuOpen) {
+      closeMenu();
+  }
+});
