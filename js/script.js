@@ -1,5 +1,6 @@
 const hamburger = document.getElementById('interior-store-index-header-nav');
 const overlay = document.getElementById('interior-store-index-overlay');
+const sideMenu = document.getElementById('interior-store-index-sideMenu');
 
 let isMenuOpen = false;
 
@@ -18,6 +19,7 @@ function toggleMenu() {
 function openMenu() {
   hamburger.classList.add('active');
   overlay.classList.add('active');
+  sideMenu.classList.add('active');
   document.body.style.overflow = 'hidden';
   isMenuOpen = true;
 }
@@ -25,6 +27,7 @@ function openMenu() {
 function closeMenu() {
   hamburger.classList.remove('active');
   overlay.classList.remove('active');
+  sideMenu.classList.remove('active');
   document.body.style.overflow = '';
   isMenuOpen = false;
 }
