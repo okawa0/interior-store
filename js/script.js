@@ -1,10 +1,10 @@
-const hamburger = document.getElementById('interior-store-index-header-nav');
+const menuButton = document.getElementById('interior-store-index-header-nav');
 const overlay = document.getElementById('interior-store-index-overlay');
 const sideMenu = document.getElementById('interior-store-index-sideMenu');
 
 let isMenuOpen = false;
 
-hamburger.addEventListener('click', toggleMenu);
+menuButton.addEventListener('click', toggleMenu);
 
 overlay.addEventListener('click', closeMenu);
 
@@ -17,7 +17,7 @@ function toggleMenu() {
 }
 
 function openMenu() {
-  hamburger.classList.add('active');
+  menuButton.classList.add('active');
   overlay.classList.add('active');
   sideMenu.classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -25,7 +25,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-  hamburger.classList.remove('active');
+  menuButton.classList.remove('active');
   overlay.classList.remove('active');
   sideMenu.classList.remove('active');
   document.body.style.overflow = '';
