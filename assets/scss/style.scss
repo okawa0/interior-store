@@ -102,4 +102,17 @@ body{
       }
     }
   }
+  .interior-store-index-main{
+    .interior-store-index-items{
+      .interior-store-index-items-list{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .interior-store-index-item{
+          img{
+          }
+        }
+      }
+    }
+  }
 }
