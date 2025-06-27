@@ -108,10 +108,31 @@ body{
         list-style: none;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        .interior-store-index-item-link{
+          text-decoration: none;
+          color: #000;
+          transition: color 0.3s ease;
+          &:hover{
+            color: #666;
+          }
+        
         .interior-store-index-item{
           img{
+            transition: color 0.3s ease;
+            &:hover{
+              opacity: 0.8;
+            }
+          }
+          .interior-store-index-item-name{
+            margin-top: 1rem;
+            font-size: 12px;
+          }
+          .interior-store-index-item-price{
+            font-size: 12px;
           }
         }
+      }
       }
     }
   }
