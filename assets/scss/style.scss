@@ -102,60 +102,66 @@ body {
       }
     }
   }
-  .interior-store-index-main {
-    .interior-store-index-items {
-      .interior-store-index-items-list {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
-        @media screen and (max-width: 1200px) {
-          grid-template-columns: repeat(2, 1fr);
+  .interior-store-index-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    .interior-store-index-main {
+      flex: 1;
+      .interior-store-index-items {
+        .interior-store-index-items-list {
+          list-style: none;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2rem;
+          @media screen and (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+          .interior-store-index-item-link {
+            text-decoration: none;
+            color: #000;
+            transition: color 0.3s ease;
+            &:hover {
+              color: #666;
+            }
+
+            .interior-store-index-item {
+              img {
+                transition: color 0.3s ease;
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+              .interior-store-index-item-name {
+                margin-top: 1rem;
+                font-size: 12px;
+              }
+              .interior-store-index-item-price {
+                font-size: 12px;
+              }
+            }
+          }
         }
-        .interior-store-index-item-link {
+      }
+      .interior-store-index-more {
+        margin: 40px 0;
+        text-align: center;
+        a {
           text-decoration: none;
-          color: #000;
+          color: #333;
+          font-weight: bold;
           transition: color 0.3s ease;
           &:hover {
             color: #666;
           }
-
-          .interior-store-index-item {
-            img {
-              transition: color 0.3s ease;
-              &:hover {
-                opacity: 0.8;
-              }
-            }
-            .interior-store-index-item-name {
-              margin-top: 1rem;
-              font-size: 12px;
-            }
-            .interior-store-index-item-price {
-              font-size: 12px;
-            }
-          }
-        }
-      }
-    }
-    .interior-store-index-more {
-      margin: 40px 0;
-      text-align: center;
-      a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        transition: color 0.3s ease;
-        &:hover {
-          color: #666;
         }
       }
     }
   }
-  .interior-store-index-footer{
+  .interior-store-index-footer {
     display: flex;
     justify-content: space-between;
-    .interior-store-index-footer-sns{
+    .interior-store-index-footer-sns {
       display: flex;
       font-size: 0.75rem;
       .interior-store-index-footer-sns-item {
@@ -169,7 +175,7 @@ body {
         }
       }
     }
-    .interior-store-index-footer-copyright{
+    .interior-store-index-footer-copyright {
       font-size: 0.5rem;
     }
   }
