@@ -1,0 +1,22 @@
+.interior-store-index-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  .interior-store-index-footer-sns {
+    display: flex;
+    font-size: 0.75rem;
+    .interior-store-index-footer-sns-item {
+      margin-right: 1rem;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        color: #666;
+      }
+    }
+  }
+  .interior-store-index-footer-copyright {
+    font-size: 0.5rem;
+  }
+}
