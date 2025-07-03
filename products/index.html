@@ -10,21 +10,8 @@
   <script src="../assets/js/script.js" defer></script>
 </head>
 <body>
-  <header class="interior-store-index-header">
-    <h1 class="interior-store-index-header-title">Furniture Design</h1>
-    <nav class="interior-store-index-header-nav" id="interior-store-index-header-nav">
-      <div class="interior-store-index-header-nav-line"></div>
-      <div class="interior-store-index-header-nav-line"></div>
-    </nav>
-  </header>
+  <div id="header"></div>
   <h1 class="products-index-title">Products</h1>
-  <div class="interior-store-index-overlay" id="interior-store-index-overlay"></div>
-  <nav class="interior-store-index-side-menu" id="interior-store-index-sideMenu">
-    <a href="#" class="interior-store-index-menu-item">PRODUCTS</a>
-    <a href="#" class="interior-store-index-menu-item">ABOUT</a>
-    <a href="#" class="interior-store-index-menu-item">COMPANY</a>
-    <a href="#" class="interior-store-index-menu-item">CONTACT</a>
-  </nav>
   <div class="interior-store-index-wrapper">
     <main class="interior-store-index-main">
       <div class="interior-store-index-items">
@@ -85,7 +72,49 @@
               <p class="interior-store-index-item-price">¥99,999 +tax</p>
             </li>
           </a>
+          <a href="" class="interior-store-index-item-link">
+            <li class="interior-store-index-item">
+              <img src="../assets/images/item9.webp" alt="">
+              <p class="interior-store-index-item-name">プロダクトタイトルプロダクトタイトル</p>
+              <p class="interior-store-index-item-price">¥99,999 +tax</p>
+            </li>
+          </a>
+          <a href="" class="interior-store-index-item-link">
+            <li class="interior-store-index-item">
+              <img src="../assets/images/item10.webp" alt="">
+              <p class="interior-store-index-item-name">プロダクトタイトルプロダクトタイトル</p>
+              <p class="interior-store-index-item-price">¥99,999 +tax</p>
+            </li>
+          </a>
+          <a href="" class="interior-store-index-item-link">
+            <li class="interior-store-index-item">
+              <img src="../assets/images/item11.webp" alt="">
+              <p class="interior-store-index-item-name">プロダクトタイトルプロダクトタイトル</p>
+              <p class="interior-store-index-item-price">¥99,999 +tax</p>
+            </li>
+          </a>
+          <a href="" class="interior-store-index-item-link">
+            <li class="interior-store-index-item">
+              <img src="../assets/images/item12.webp" alt="">
+              <p class="interior-store-index-item-name">プロダクトタイトルプロダクトタイトル</p>
+              <p class="interior-store-index-item-price">¥99,999 +tax</p>
+            </li>
+          </a>
         </ul>
       </div>
+      <p class="interior-store-index-more"><a href="">1</a></p>
+      <div id="footer"></div>
+      <script>
+        fetch("../header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+        fetch("../footer.html")
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      </script>
 </body>
 </html>

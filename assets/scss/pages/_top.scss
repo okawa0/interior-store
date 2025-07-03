@@ -2,6 +2,7 @@ body {
   max-width: 1360px;
   padding: 0 40px;
   margin: 0 auto;
+  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
 
   .interior-store-index-overlay {
     position: fixed;
@@ -83,12 +84,12 @@ body {
         }
       }
       .interior-store-index-more {
-        margin: 40px 0;
+        margin: 40px 0 121px;
         text-align: center;
         a {
           text-decoration: none;
           color: #333;
-          font-weight: bold;
+          font-weight: 400;
           transition: color 0.3s ease;
           &:hover {
             color: #666;
