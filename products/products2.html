@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <title>Products</title>
+  <meta name="description" content="商品一覧ページです。">	
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+  <div id="header"></div>
+  <h1 class="products-index-title">Products</h1>
+  <div class="interior-store-index-wrapper">
+    <main class="interior-store-index-main">
+      <div class="interior-store-index-items">
+        <ul class="interior-store-index-items-list">
+          <a href="" class="interior-store-index-item-link">
+            <li class="interior-store-index-item">
+              <img src="../assets/images/item13.webp" alt="">
+              <p class="interior-store-index-item-name">プロダクトタイトルプロダクトタイトル</p>
+              <p class="interior-store-index-item-price">¥99,999 +tax</p>
+            </li>
+          </a>
+          <a href="" class="interior-store-index-item-link">
+            <li class="interior-store-index-item">
+              <img src="../assets/images/item14.webp" alt="">
+              <p class="interior-store-index-item-name">プロダクトタイトルプロダクトタイトル</p>
+              <p class="interior-store-index-item-price">¥99,999 +tax</p>
+            </li>
+          </a>
+          <a href="" class="interior-store-index-item-link">
+            <li class="interior-store-index-item">
+              <img src="../assets/images/item15.webp" alt="">
+              <p class="interior-store-index-item-name">プロダクトタイトルプロダクトタイトル</p>
+              <p class="interior-store-index-item-price">¥99,999 +tax</p>
+            </li>
+          </a>
+          <a href="" class="interior-store-index-item-link">
+            <li class="interior-store-index-item">
+              <img src="../assets/images/item16.webp" alt="">
+              <p class="interior-store-index-item-name">プロダクトタイトルプロダクトタイトル</p>
+              <p class="interior-store-index-item-price">¥99,999 +tax</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="interior-store-index-pagination">
+        <p class="interior-store-index-more"><a href="products.html">1</a></p>
+        <p class="interior-store-index-more">2</p>
+      </div>
+      <div id="footer"></div>
+      <script>
+        fetch("../header.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        });
+        fetch("../footer.html")
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById("footer").innerHTML = data;
+          });
+      </script>
+</body>
+</html>
