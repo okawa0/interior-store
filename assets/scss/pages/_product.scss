@@ -1,0 +1,24 @@
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  column-gap: 64px;
+  .product-image {
+    width: 400px;
+  }
+  .product-details {
+    width: 336px;
+    font-size: 14px;
+    .product-spec-list {
+      .product-spec-item {
+        display: flex;
+        .product-label {
+          width: 100px;
+        }
+        .product-value {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
