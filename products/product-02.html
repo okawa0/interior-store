@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <title>Product-02</title>
+  <meta name="description" content="商品詳細ページです。">	
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script src="../assets/js/script.js" defer></script>
+</head>
+<body>
+  <div id="header"></div>
+  <h1 class="products-index-title">プロダクトタイトル</h1>
+  <div class="product-container">
+    <img src="../assets/images/item2.webp" alt="クッション付きのダークグレーの布張りソファ" class="product-image">
+    <div class="product-details">
+      <p class="product-description">
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      </p><br>
+      <p class="product-description">
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+      </p><br>
+      <p class="product-price">¥99,999 +tax</p><br>
+      <div class="product-spec-list">
+        <div class="product-spec-item">
+          <span class="product-label">SIZE：</span>
+          <span class="product-value">W999 × D999 × H999</span>
+        </div>
+        <div class="product-spec-item">
+          <span class="product-label">COLOR：</span>
+          <span class="product-value">テキスト</span>
+        </div>
+        <div class="product-spec-item">
+          <span class="product-label">MATERIAL：</span>
+          <span class="product-value">テキストテキストテキスト</span>
+        </div>
+      </div>
+      </div>
+  </div>
+  <a href="products.html" class="product-back-link">
+    <p class="product-back">Back To Products</p>
+  </a>
+  <div id="footer"></div>
+  <script>
+    fetch("../header.html")
+    .then((res) => res.text())
+    .then((data) => {
+      document.getElementById("header").innerHTML = data;
+    });
+    fetch("../footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
