@@ -138,22 +138,28 @@
     <script>
       // ヘッダーとフッターを読み込んでから、JSを実行
       Promise.all([
-        fetch("header.html").then(res => res.text()),
-        fetch("footer.html").then(res => res.text())
+        fetch("header.html").then((res) => res.text()),
+        fetch("footer.html").then((res) => res.text()),
       ]).then(([headerData, footerData]) => {
         document.getElementById("header").innerHTML = headerData;
         document.getElementById("footer").innerHTML = footerData;
-    
+
         // HTML反映を待ってから処理
         const wait = setInterval(() => {
-          const menuButton = document.getElementById("interior-store-index-header-nav");
-          const overlay = document.getElementById("interior-store-index-overlay");
-          const sideMenu = document.getElementById("interior-store-index-sideMenu");
-    
+          const menuButton = document.getElementById(
+            "interior-store-index-header-nav"
+          );
+          const overlay = document.getElementById(
+            "interior-store-index-overlay"
+          );
+          const sideMenu = document.getElementById(
+            "interior-store-index-sideMenu"
+          );
+
           if (menuButton && overlay && sideMenu) {
             clearInterval(wait);
             let isMenuOpen = false;
-    
+
             menuButton.addEventListener("click", () => {
               menuButton.classList.toggle("active");
               overlay.classList.toggle("active");
@@ -161,7 +167,7 @@
               document.body.style.overflow = isMenuOpen ? "" : "hidden";
               isMenuOpen = !isMenuOpen;
             });
-    
+
             overlay.addEventListener("click", () => {
               menuButton.classList.remove("active");
               overlay.classList.remove("active");
@@ -169,7 +175,7 @@
               document.body.style.overflow = "";
               isMenuOpen = false;
             });
-    
+
             document.addEventListener("keydown", (e) => {
               if (e.key === "Escape" && isMenuOpen) {
                 menuButton.classList.remove("active");
