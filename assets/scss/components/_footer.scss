@@ -2,9 +2,16 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .interior-store-index-footer-sns {
     display: flex;
     font-size: 0.75rem;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 1rem;
+    }
     .interior-store-index-footer-sns-item {
       margin-right: 1rem;
       color: #333;
