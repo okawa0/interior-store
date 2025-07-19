@@ -71,7 +71,7 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  z-index: 998;
+  z-index: 1008;
   &.active {
     opacity: 1;
     visibility: visible;
@@ -84,7 +84,7 @@
   width: 300px;
   height: 100%;
   transition: left 0.5s ease;
-  z-index: 999;
+  z-index: 1009;
   &.active {
     left: 30px;
   }
