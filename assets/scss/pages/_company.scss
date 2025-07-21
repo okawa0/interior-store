@@ -1,0 +1,60 @@
+.company-main {
+  padding: 2rem 0;
+  width: 600px;
+  font-family: "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  .company-title {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+  .company-info {
+
+    table {
+      width: 600px;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.6;
+
+      th,
+      td {
+        border-top: 1px solid #DCDBDB;
+        padding: 12px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        width: 190px;
+        font-weight: 400;
+      }
+
+      tr:first-child {
+        th,
+        td {
+          border-top: none;
+        }
+      }
+    }
+
+    @media (max-width: 600px) {
+      table {
+        th,
+        td {
+          display: block;
+          width: 100%;
+        }
+
+        th {
+          background: none;
+          font-weight: normal;
+          padding-top: 1em;
+        }
+
+        td {
+          padding-bottom: 1em;
+          border-top: none;
+        }
+      }
+    }
+  }
+}
