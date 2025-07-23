@@ -135,8 +135,6 @@
         .then((data) => {
           document.getElementById("footer").innerHTML = data;
         });
-    </script>
-    <script>
       // ヘッダーとフッターを読み込んでから、JSを実行
       Promise.all([
         fetch("header.html").then((res) => res.text()),
