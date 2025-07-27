@@ -50,7 +50,7 @@
     </a>
     <div id="footer"></div>
     <script>
-      fetch("../header.html")
+      fetch("header.html")
         .then((res) => res.text())
         .then((data) => {
           document.getElementById("header").innerHTML = data;
@@ -62,7 +62,7 @@
         });
       // ヘッダーとフッターを読み込んでから、JSを実行
       Promise.all([
-        fetch("../header.html").then((res) => res.text()),
+        fetch("header.html").then((res) => res.text()),
         fetch("../footer.html").then((res) => res.text()),
       ]).then(([headerData, footerData]) => {
         document.getElementById("header").innerHTML = headerData;
