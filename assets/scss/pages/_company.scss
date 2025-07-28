@@ -2,6 +2,9 @@
   padding: 2rem 0;
   width: 600px;
   font-family: "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
   .company-title {
     font-size: 1rem;
     margin-bottom: 50px;
@@ -13,7 +16,6 @@
       border-collapse: collapse;
       font-size: 14px;
       line-height: 1.6;
-
       th,
       td {
         border-top: 1px solid #dcdbdb;
@@ -25,6 +27,7 @@
       th {
         width: 190px;
         font-weight: 400;
+        }
       }
 
       tr:first-child {
