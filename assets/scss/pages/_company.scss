@@ -38,8 +38,9 @@
       }
     }
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: 600px) {
       table {
+        width: 100% !important;
         th,
         td {
           display: block;
@@ -50,11 +51,12 @@
           background: none;
           font-weight: normal;
           padding-top: 1em;
+          width: 100% !important;
         }
 
         td {
           padding-bottom: 1em;
-          border-top: none;
+          border-top: none !important;
         }
       }
     }
