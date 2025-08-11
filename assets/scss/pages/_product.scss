@@ -15,6 +15,11 @@
       width: 100%;
     }
   }
+  .product-image-long{
+    height: 100%;
+    @media screen and (max-width: 767px) {
+    }
+  }
   .product-details {
     width: 336px;
     font-size: 14px;
